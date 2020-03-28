@@ -13,8 +13,8 @@ git clone https://github.com/Pipzero/sazzypress.git
 2. Activate theme
 
 3. Go to theme folder in your command terminal and type in
-    A. yarn
-    B. gulp watch-bs
+..* A. `yarn`
+..* B. `gulp watch-bs`
 
 Make sure your WP is running within Local by Flywheel.
 
