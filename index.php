@@ -47,7 +47,7 @@
       <p>Responsive web design means to design websites that work well on mobile, tablet, and desktop devices, and according to Statista, mobile traffic is increasing significantly.</p>
 </div>
 
-<div class="confined bg-orange">
+<div class="confined">
       <h2>Must stack Small and Below</h2>
       <div class="flexy stack-sm">
             <section>
@@ -83,19 +83,19 @@
 </div>
 
 
-<div class="confined flexy bg-blue stack-xs">
+<div class="confined flexy stack-xs">
       <section class="nopadding">
             <img src="<?php bloginfo('template_directory'); ?>/img/adidas-shirt.jpg" alt="">
       </section>
       <section data-flexratio="2">
-            <h5>What is Responsive Design?</h5>
+            <h3>This is a product</h3>
             <code>section data-flexratio="3"</code>
             <p>Responsive web design means to design websites that work well on mobile, tablet, and desktop devices, and according to Statista, mobile traffic is increasing significantly.</p>
             <p> What does this mean? 🤔</p>
             <p>It means, websites that aren’t <a href="">optimized</a> for mobile devices are likely alienating a frightening share of their users, since 80% of users say that they’ll disengage with websites that don’t work well on their device. Additionally, search engines actively demote websites that aren’t mobile-friendly in their search results, affecting SEO</p>
       </section>
 </div>
-<div class="confined flexy stack-sm">
+<div class="free flexy stack-sm">
       <section>
             <h4>Flex ratio: 1</h4>
             <code>section data-flexratio="1"</code>
