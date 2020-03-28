@@ -4,7 +4,7 @@
 
 
 <div class="free bg-red">
-      <div class="confined flexy stack-md">
+      <div class="confined flexy stack-xs">
             <section>
                   <h4>Stack Test</h4>
                   <p>This is a test of staccs.</p>
@@ -28,7 +28,7 @@
             <p>It means, websites that aren’t <a href="">optimized</a> for mobile devices are likely alienating a frightening share of their users, since 80% of users say that they’ll disengage with websites that don’t work well on their device. Additionally, search engines actively demote websites that aren’t mobile-friendly in their search results, affecting SEO</p>
       </div>
 </div>
-<div class="confined flexy stack-on-xs">
+<div class="confined flexy stack-xs">
       <section class="nopadding">
             <img src="<?php bloginfo('template_directory'); ?>/img/adidas-shirt.jpg" alt="">
       </section>
