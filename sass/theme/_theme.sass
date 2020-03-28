@@ -1,0 +1,114 @@
+html
+  font-size: 62.5%
+
+body
+  font-weight: $fw-normal
+  font-family: $body-font
+  background: $theme-body-bg
+  color: $theme-body-text-color
+  font-size: $base-rem-size
+  line-height: $base-rem-size*1.4
+
+h1,
+h2,
+h3,
+h4,
+h5
+  font-weight: normal
+  margin: 4rem 0 1.4rem
+  padding: 0
+  font-family: $heading-font
+  font-weight: $fw-bold
+  color: $theme-heading-color
+
+h1
+  font-size: $base-rem-size*pow($typescale,5)
+  line-height: $base-rem-size*pow($typescale,5)*1.2
+h2
+  font-size: $base-rem-size*pow($typescale,4)
+  line-height: $base-rem-size*pow($typescale,5)*1
+h3
+  font-size: $base-rem-size*pow($typescale,3)
+  line-height: $base-rem-size*pow($typescale,5)*.8
+h4
+  font-size: $base-rem-size*pow($typescale,2)
+  line-height: $base-rem-size*pow($typescale,5)*.6
+h5
+  font-size: $base-rem-size*$typescale
+  line-height: $base-rem-size*pow($typescale,5)*.4
+
+h1:first-child,
+h2:first-child, 
+h3:first-child,
+h4:first-child,
+h5:first-child
+  margin-top: 0
+  padding-top: 0
+
+p
+  margin: 0 0 1rem
+
+  &.headline
+    font-size: .86rem
+
+* p:only-child,
+* p:last-child
+  margin-bottom: 0
+
+a
+  text-decoration: none
+  transition: .2s
+  color: $theme-link-color
+
+  &:active,
+  &:visited
+    text-decoration: none
+
+  &:hover
+    text-decoration: none
+    color: $theme-link-hover-color
+    text-decoration: underline
+
+
+//main container mods
+
+.header
+  height: 30vh
+  background: #00b09b
+  background: linear-gradient(to left, #cb2d3e, #ef473a)
+  text-align: center
+  font-size: 4rem
+  padding-top: 5rem
+  letter-spacing: .8rem
+
+.jumbotron
+  h1
+    color: white
+
+.navbar-brand
+  font-size: 1.6rem
+
+#sidebar
+  // position: fixed
+  // right: 0
+  // top: 0
+  // height: 100vh
+//CUSTOM
+
+
+.bg-black
+    background: $color-black
+
+.bg-blue
+    background: $color-blue
+
+
+
+.f-stack
+  display: block
+
+  @include breakpoint(sm)
+    display: flex
+
+    > section
+      flex: 1 200px

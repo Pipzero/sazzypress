@@ -1,0 +1,33 @@
+@mixin breakpoint($class)
+      @if $class == sm
+            @media (min-width: $breakpoint-sm)
+                  @content
+      @if $class == md
+            @media (min-width: $breakpoint-md)
+                  @content
+      @if $class == lg
+            @media (min-width: $breakpoint-lg)
+                  @content
+
+
+@mixin fsize-variance($size-sm,$size-md,$size-lg,$size-xl)
+      $vp-sizes: sm, md, lg, xl
+      $h-sizes: $size-sm, $size-md, $size-lg, $size-xl
+      $h-colors: red, orange, blue, pink
+
+      @each $vp-size in $vp-sizes
+            $i: index($vp-sizes, $vp-size)
+            @include media-breakpoint-up($vp-size)
+                  font-size: $base-font-size*nth($h-sizes,$i)
+                  color: nth($h-colors,$i)
+                  @content
+
+
+@function pow($number, $exponent)
+      $value: 1;
+
+      @if $exponent > 0
+            @for $i from 1 through $exponent
+                  $value: $value * $number;
+
+      @return $value;

@@ -1,0 +1,82 @@
+.free
+    width: auto
+
+.free,
+.confined
+    padding: 6rem 0
+
+.free
+    > .confined
+        padding: 0 0
+
+.confined
+    @extend .align-center
+    max-width: $breakpoint-lg
+
+    > section:only-child
+        margin: 0 $gutter-half
+        flex: 1
+
+
+.flexy
+    display: flex
+    flex-flow: row nowrap
+    
+    > section
+        flex: 1
+        margin: 0 $gutter-half $gutter
+        padding: $column-padding-computed
+        background-color: $color-purple
+        border-radius: $global-corner-radius
+        
+        &.nopadding
+            padding: 0
+
+.flexy
+    img
+        max-width: 100%
+        margin: 0
+        padding: 0
+        display: block
+        
+.stack-on-xs
+
+.align-center
+    margin-left: auto
+    margin-right: auto
+
+
+
+.bg-black
+    background: $color-black
+
+.bg-blue
+    background: $color-blue
+
+
+.breakpoint
+    position: fixed
+    bottom: 1rem
+    left: 1rem
+
+.breakpoint:after
+    display: block
+    padding: .4rem .8rem
+    font-size: 1rem
+    text-align: center
+    color: $color-white
+    border-radius: $global-corner-radius
+    content: 'Extra Small'
+    background-color: rgba($color-red,.6)
+
+    @include breakpoint(sm)
+        content: 'Small'
+        background-color: rgba($color-orange,.6)
+
+    @include breakpoint(md)
+        content: 'Medium'
+        background-color: rgba($color-blue,.6)
+
+    @include breakpoint(lg)
+        content: 'Large'
+        background-color: rgba($color-turquoise,.6)
