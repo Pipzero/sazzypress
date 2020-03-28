@@ -13,11 +13,11 @@
 // STACKING
 
 @mixin stack($bp)
-      @if $bp == sm
-            @include breakpoint($bp)
-                  display: flex
-                  > section
-                        flex: 1
+      @include breakpoint($bp)
+            @content
+            display: flex
+            > section
+                  flex: 1
 
 
 // POWER FUNCTION
