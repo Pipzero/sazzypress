@@ -10,18 +10,17 @@
                   @content
 
 
-@mixin fsize-variance($size-sm,$size-md,$size-lg,$size-xl)
-      $vp-sizes: sm, md, lg, xl
-      $h-sizes: $size-sm, $size-md, $size-lg, $size-xl
-      $h-colors: red, orange, blue, pink
+// STACKING
 
-      @each $vp-size in $vp-sizes
-            $i: index($vp-sizes, $vp-size)
-            @include media-breakpoint-up($vp-size)
-                  font-size: $base-font-size*nth($h-sizes,$i)
-                  color: nth($h-colors,$i)
-                  @content
+@mixin stack($bp)
+      @if $bp == sm
+            @include breakpoint($bp)
+                  display: flex
+                  > section
+                        flex: 1
 
+
+// POWER FUNCTION
 
 @function pow($number, $exponent)
       $value: 1;

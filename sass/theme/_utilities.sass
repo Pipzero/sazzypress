@@ -3,7 +3,10 @@
 
 .free,
 .confined
-    padding: 6rem 0
+    padding: $column-padding*1.8 $column-padding $column-padding*1.2
+
+    @include breakpoint(sm)
+        padding: 2rem 2rem
 
 .free
     > .confined
@@ -39,7 +42,20 @@
         padding: 0
         display: block
         
-.stack-on-xs
+
+
+// STACKING, breakpoin and below
+
+.stack-sm,
+.stack-md
+  display: block
+
+.stack-xs
+  @include stack(xs)
+
+.stack-md
+  @include stack(sm)
+
 
 .align-center
     margin-left: auto

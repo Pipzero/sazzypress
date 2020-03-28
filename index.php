@@ -4,7 +4,7 @@
 
 
 <div class="free bg-red">
-      <div class="confined f-stack">
+      <div class="confined flexy stack-md">
             <section>
                   <h4>Stack Test</h4>
                   <p>This is a test of staccs.</p>
