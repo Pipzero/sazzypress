@@ -2,127 +2,132 @@
 
 <div class="breakpoint"></div>
 
-
-<div class="free bg-black">
-      <h2>Must stack Medium and Below</h2>
-      <div class="confined flexy stack-md">
-            <section>
-                  <h4>Stack Test</h4>
-                  <p>This is a test of staccs.</p>
-            </section>
-            <section>
-                  <h5>Something in the Water</h5>
-                  <p>Walter, my dear, are you drunk?</p>
-            </section>
-            <section>
-                  <h5>Of Course Not!</h5>
-                  <p>There are things I won't be able to explain as of the moment.</p>
-            </section>
+<main>
+      <div>
+            <section></section>
       </div>
-</div>
 
-<div class="confined bg-red">
-      <h2>Must stack Small and Below</h2>
-      <div class="confined flexy stack-sm">
-            <section>
-                  <h4>Stack Test</h4>
-                  <p>This is a test of staccs.</p>
-            </section>
-            <section>
-                  <h5>Something in the Water</h5>
-                  <p>Walter, my dear, are you drunk?</p>
-            </section>
-            <section>
-                  <h5>Of Course Not!</h5>
-                  <p>There are things I won't be able to explain as of the moment.</p>
-            </section>
-      </div>
-</div>
-
-
-<div class="confined flexy stack-xs">
-      <section class="nopadding">
-            <img src="<?php bloginfo('template_directory'); ?>/img/adidas-shirt.jpg" alt="">
-      </section>
-      <section>
-            <h5>What is Responsive Design?</h5>
-            <p>Responsive web design means to design websites that work well on mobile, tablet, and desktop devices, and according to Statista, mobile traffic is increasing significantly.</p>
-            <p> What does this mean? 🤔</p>
-            <p>It means, websites that aren’t <a href="">optimized</a> for mobile devices are likely alienating a frightening share of their users, since 80% of users say that they’ll disengage with websites that don’t work well on their device. Additionally, search engines actively demote websites that aren’t mobile-friendly in their search results, affecting SEO</p>
-      </section>
-</div>
-<div class="confined flexy">
-      <section>
-            <h4>What is Responsive Design?</h4>
-            <p>Responsive web design means to design websites that work well on mobile, tablet, and desktop devices, and according to Statista, mobile traffic is increasing significantly.</p>
-            <p> What does this mean? 🤔</p>
-            <p>It means, websites that aren’t <a href="">optimized</a> for mobile devices are likely alienating a frightening share of their users, since 80% of users say that they’ll disengage with websites that don’t work well on their device. Additionally, search engines actively demote websites that aren’t mobile-friendly in their search results, affecting SEO</p>
-      </section>
-</div>
-
+</main>
 
 
 <div class="free bg-blue">
-      <div class="confined">
-            <h2>What is Responsive Design?</h2>
+      <h2>Must stack Medium and Below</h2>
+      <p>Responsive web design means to design websites that work well on mobile, tablet, and desktop devices, and according to Statista, mobile traffic is increasing significantly.</p>
+      <p> What does this mean? 🤔</p>
+
+      <div class=" flexy stack-md">
+            <section>
+                  <article data-theme="light">
+                        <h4>Light Theme</h4>
+                        <p>Responsive web design means to design websites that work well on mobile, tablet, and desktop devices, and according to Statista, mobile traffic is increasing significantly.</p>
+                        <p> What does this mean? 🤔</p>
+                  </article>
+            </section>
+            <section>
+                  <article data-theme="dark">
+                        <h4>Stack Test</h4>
+                        <p>Responsive web design means to design websites that work well on mobile, tablet, and desktop devices, and according to Statista, mobile traffic is increasing significantly.</p>
+                        
+                        <code>
+                              $article-padding-input: 1rem
+                              $article-padding: $article-padding-input*.6 $article-padding-input*1.1  $article-padding-input*1.1
+                        </code>
+
+                        <p> What does this mean? 🤔</p>
+                  </article>
+            </section>
+            <section>
+                  <article data-theme="dark">
+                        <h4>Dark Theme</h4>
+                        <p>Responsive web design means to design websites that work well on mobile, tablet, and desktop devices, and according to Statista, mobile traffic is increasing significantly.</p>
+                        <p> What does this mean? 🤔</p>
+                  </article>
+            </section>
+      </div>
+      <p>Responsive web design means to design websites that work well on mobile, tablet, and desktop devices, and according to Statista, mobile traffic is increasing significantly.</p>
+</div>
+
+<div class="confined bg-orange">
+      <h2>Must stack Small and Below</h2>
+      <div class="flexy stack-sm">
+            <section>
+                  <article data-theme="light">
+                        <h4>Light Theme</h4>
+                        <p>Responsive web design means to design websites that work well on mobile, tablet, and desktop devices, and according to Statista, mobile traffic is increasing significantly.</p>
+                        <p> What does this mean? 🤔</p>
+                  </article>
+            </section>
+            <section data-flexratio="3">
+                  <article data-theme="dark">
+                        <h4>Column width by flex ratio</h4>
+                        <code>section data-flexratio="2"</code>
+                        <p>Responsive web design means to design websites that work well on mobile, tablet, and desktop devices, and according to Statista, mobile traffic is increasing significantly.</p>
+                        
+                        <code>
+                              $article-padding-input: 1rem
+                              $article-padding: $article-padding-input*.6 $article-padding-input*1.1  $article-padding-input*1.1
+                        </code>
+
+                        <p> What does this mean? 🤔</p>
+                  </article>
+            </section>
+            <section>
+                  <article data-theme="dark">
+                        <h4>Dark Theme</h4>
+                        <p>Responsive web design means to design websites that work well on mobile, tablet, and desktop devices, and according to Statista, mobile traffic is increasing significantly.</p>
+                        <p> What does this mean? 🤔</p>
+                  </article>
+            </section>
+      </div>
+      <p>This table represents a thousand lives that lived before the great flu.</p>
+</div>
+
+
+<div class="confined flexy bg-blue stack-xs">
+      <section class="nopadding">
+            <img src="<?php bloginfo('template_directory'); ?>/img/adidas-shirt.jpg" alt="">
+      </section>
+      <section data-flexratio="2">
+            <h5>What is Responsive Design?</h5>
+            <code>section data-flexratio="3"</code>
             <p>Responsive web design means to design websites that work well on mobile, tablet, and desktop devices, and according to Statista, mobile traffic is increasing significantly.</p>
             <p> What does this mean? 🤔</p>
             <p>It means, websites that aren’t <a href="">optimized</a> for mobile devices are likely alienating a frightening share of their users, since 80% of users say that they’ll disengage with websites that don’t work well on their device. Additionally, search engines actively demote websites that aren’t mobile-friendly in their search results, affecting SEO</p>
-      </div>
-</div>
-
-
-<div id="pricelist" class="free">
-      <div class="flexy stack-xs">
-            <section>Hey</section>
-            <section>
-                  <h4>Blog Title</h4>
-                  <p>Section Content. That is a impressed.</p>
-            </section>
-            <section>Hey</section>
-      </div>
-      <div class="flexy">
-            <section>Hey</section>
-            <section>Hey</section>
-            <section>
-                  <h4>Blog Title</h4>
-                  <p>Section Content. That is a impressed.</p>
-            </section>
-      </div>
-</div>
-
-<div class="free">
-      <div class="flexy stack-sm">
-            <section>Hey</section>
-            <section>
-                  <h4>Blog Title</h4>
-                  <p>Section Content. That is a impressed.</p>
-            </section>
-            <section>
-                  <h4>Blog Title</h4>
-                  <p>Section Content. That is a impressed.</p>
-            </section>
-      </div>
-      <div class="flexy">
-            <section>
-                  <h4>Blog Title</h4>
-                  <p>Section Content. That is a impressed.</p>
-            </section>
-            <section>
-                  <h4>Blog Title</h4>
-                  <p>Section Content. That is a impressed.</p>
-            </section>
-      </div>
-</div>
-
- 
-<div class="confined flexy">
-      <section>Column</section>
-      <section>
-            <h4>Blog Title</h4>
-            <p>Section Content. That is a impressed.</p>
       </section>
 </div>
+<div class="confined flexy stack-sm">
+      <section>
+            <h4>Flex ratio: 1</h4>
+            <code>section data-flexratio="1"</code>
+            <p>Responsive web design means to design websites that work well on mobile, tablet, and desktop devices, and according to Statista, mobile traffic is increasing significantly.</p>
+            <p> What does this mean? 🤔</p>
+            <p>It means, websites that aren’t <a href="">optimized</a> for mobile devices are likely alienating a frightening share of their users, since 80% of users say that they’ll disengage with websites that don’t work well on their device. Additionally, search engines actively demote websites that aren’t mobile-friendly in their search results, affecting SEO</p>
+      </section>
+      <section data-flexratio="2">
+            <h4>Flex ratio: 2</h4>
+            <code>section data-flexratio="2"</code>
+            <p>Responsive web design means to design websites that work well on mobile, tablet, and desktop devices, and according to Statista, mobile traffic is increasing significantly.</p>
+            <p> What does this mean? 🤔</p>
+            <p>It means, websites that aren’t <a href="">optimized</a> for mobile devices are likely alienating a frightening share of their users, since 80% of users say that they’ll disengage with websites that don’t work well on their device. Additionally, search engines actively demote websites that aren’t mobile-friendly in their search results, affecting SEO</p>
+      </section>
+      <section data-flexratio="3">
+            <h4>Flex ratio: 3</h4>
+            <code>section data-flexratio="3"</code>
+            <p>Responsive web design means to design websites that work well on mobile, tablet, and desktop devices, and according to Statista, mobile traffic is increasing significantly.</p>
+            <p> What does this mean? 🤔</p>
+            <p>It means, websites that aren’t <a href="">optimized</a> for mobile devices are likely alienating a frightening share of their users, since 80% of users say that they’ll disengage with websites that don’t work well on their device. Additionally, search engines actively demote websites that aren’t mobile-friendly in their search results, affecting SEO</p>
+      </section>
+</div>
+
+
+
+<div class="free">
+      <h2>You can do whatever you like</h2>
+      <p>Responsive web design means to design websites that work well on mobile, tablet, and desktop devices, and according to Statista, mobile traffic is increasing significantly.</p>
+      <p> What does this mean? 🤔</p>
+      <p>It means, websites that aren’t <a href="">optimized</a> for mobile devices are likely alienating a frightening share of their users, since 80% of users say that they’ll disengage with websites that don’t work well on their device. Additionally, search engines actively demote websites that aren’t mobile-friendly in their search results, affecting SEO</p>
+</div>
+
 
  
 <?php get_footer(); ?>

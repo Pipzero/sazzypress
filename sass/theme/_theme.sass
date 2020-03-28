@@ -23,16 +23,16 @@ h5
 
 h1
   font-size: $base-rem-size*pow($typescale,5)
-  line-height: $base-rem-size*pow($typescale,5)*1.2
+  line-height: $base-rem-size*pow($typescale,5)*1
 h2
   font-size: $base-rem-size*pow($typescale,4)
-  line-height: $base-rem-size*pow($typescale,5)*1
+  line-height: $base-rem-size*pow($typescale,5)*.8
 h3
   font-size: $base-rem-size*pow($typescale,3)
-  line-height: $base-rem-size*pow($typescale,5)*.8
+  line-height: $base-rem-size*pow($typescale,5)*.6
 h4
   font-size: $base-rem-size*pow($typescale,2)
-  line-height: $base-rem-size*pow($typescale,5)*.6
+  line-height: $base-rem-size*pow($typescale,5)*.4
 h5
   font-size: $base-rem-size*$typescale
   line-height: $base-rem-size*pow($typescale,5)*.4
@@ -44,7 +44,7 @@ h4:first-child,
 h5:first-child
   margin-top: 0
   padding-top: 0
-
+  
 p
   margin: 0 0 1rem
 
@@ -69,8 +69,30 @@ a
     color: $theme-link-hover-color
     text-decoration: underline
 
+// for tests only
+article
+  padding: $article-padding
+  border-radius: $global-corner-radius
+
+  &[data-theme="light"]
+    background: $color-white
+    
+    p
+      color: $color-black
+
+  &[data-theme="dark"]
+    background: $color-black
+    
+    p
+      color: $color-white
 
 //main container mods
+code
+  display: block
+  border: 1px solid rgba($color-pink, .4)
+  border-radius: $global-corner-radius
+  padding: $gutter-half
+  margin: 0 0 $gutter-half
 
 .header
   height: 30vh
@@ -102,3 +124,13 @@ a
 .bg-blue
     background: $color-blue
 
+footer
+  height: 10rem
+  text-align: center
+  background: $color-pink
+  @extend .flexy
+  justify-content: center
+  align-items: center
+
+  *
+    flex: 1

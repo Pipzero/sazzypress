@@ -1,24 +1,37 @@
-.free
-    width: auto
-
 .free,
 .confined
-    padding: $column-padding*1.8 $column-padding $column-padding*1.2
+    overflow: auto
 
     @include breakpoint(sm)
-        padding: 2rem 2rem
+        overflow: default
 
+    
+// Free Container - Vertical Section Padding
 .free
-    > .confined
-        padding: 0 0
+    width: auto
+    padding: $section-x-padding*.5 $section-y-padding*.5
+
+    @include breakpoint(sm)
+        padding-left: $section-x-padding
+        padding-right: $section-x-padding
+        padding-top: $section-y-padding
+        padding-bottom: $section-y-padding
+
+
 
 .confined
     @extend .align-center
     max-width: $breakpoint-lg
+    padding-top: $section-y-padding*.5
+    padding-bottom: $section-y-padding*.5
+    padding-left: $section-x-padding*.5
+    padding-right: $section-x-padding*.5
 
-    > section:only-child
-        margin: 0 $gutter-half
-        flex: 1
+    @include breakpoint(sm)
+        padding-top: $section-y-padding
+        padding-bottom: $section-y-padding
+        padding-left: 0
+        padding-right: 0
 
 
 .flexy
@@ -27,22 +40,25 @@
     
     > section
         flex: 1
-        margin: 0 $gutter-half $gutter
-        padding: $column-padding-computed
-        background-color: $color-purple
-        border-radius: $global-corner-radius
+        margin: $gutter-half $gutter-half
+        padding: $col-padding
+        box-sizing: border-box
         
+        &[data-flexratio="2"]
+            flex: 2
+        
+        &[data-flexratio="3"]
+            flex: 3
+
         &.nopadding
             padding: 0
+
+
 
 .flexy
     img
         max-width: 100%
-        margin: 0
-        padding: 0
         display: block
-        
-
 
 // STACKING, breakpoin and below
 
@@ -75,6 +91,12 @@
 
 .bg-red
     background: $color-red
+
+.bg-green
+    background: $color-green
+
+.bg-orange
+    background: $color-orange
 
 
 .breakpoint
