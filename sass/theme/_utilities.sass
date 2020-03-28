@@ -47,7 +47,8 @@
 // STACKING, breakpoin and below
 
 .stack-xs,
-.stack-sm
+.stack-sm,
+.stack-md
   display: block
 
 .stack-xs
@@ -55,6 +56,9 @@
 
 .stack-sm
   @include stack(md)
+
+.stack-md
+  @include stack(lg)
 
 
 .align-center
