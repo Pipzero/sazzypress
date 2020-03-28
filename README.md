@@ -8,7 +8,7 @@ Mobile first, flexbox approach. (in alpha)
 ## INSTRUCTIONS
 
 1. In your WP theme directory:
-git clone https://github.com/Pipzero/sazzypress.git
+   `git clone https://github.com/Pipzero/sazzypress.git`
 
 2. Activate theme
 
