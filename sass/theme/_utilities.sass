@@ -1,25 +1,14 @@
-*
-    transition: .2s all
-
-.free,
+.loose,
 .confined
     overflow: auto
+    display: block
 
     @include breakpoint(sm)
-        overflow: default
 
     
 // Free Container - Vertical Section Padding
-.free
+.loose
     width: auto
-    padding: $section-x-padding*.5 $section-y-padding*.5
-
-    @include breakpoint(sm)
-        padding-left: $section-x-padding
-        padding-right: $section-x-padding
-        padding-top: $section-y-padding
-        padding-bottom: $section-y-padding
-
 
 
 .confined
@@ -30,7 +19,7 @@
     padding-left: $section-x-padding*.5
     padding-right: $section-x-padding*.5
 
-    @include breakpoint(sm)
+    @include breakpoint(lg)
         padding-top: $section-y-padding
         padding-bottom: $section-y-padding
         padding-left: 0
@@ -46,15 +35,18 @@
         margin: $gutter-half $gutter-half
         padding: $col-padding
         box-sizing: border-box
+
+        &.nopadding
+            padding: 0
         
         &[data-flexratio="2"]
             flex: 2
         
         &[data-flexratio="3"]
             flex: 3
-
-        &.nopadding
-            padding: 0
+        
+        &[data-flexratio="4"]
+            flex: 4
 
 
 
@@ -100,6 +92,11 @@
 
 .bg-orange
     background: $color-orange
+
+.c
+    color: $color-black
+
+
 
 
 .breakpoint

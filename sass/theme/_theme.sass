@@ -69,7 +69,36 @@ a
     color: $theme-link-hover-color
     text-decoration: underline
 
-// for tests only
+
+//main container mods
+
+code
+  display: block
+  border: 1px solid rgba($color-pink, .4)
+  border-radius: $global-corner-radius
+  padding: $gutter-half
+  margin: 0 0 $gutter-half
+
+header
+  height: 30vh
+  background: #00b09b
+  background: linear-gradient(to left, #cb2d3e, #ef473a)
+  text-align: center
+  font-size: 4rem
+  padding-top: 5rem
+  letter-spacing: .8rem
+
+footer
+  height: 10rem
+  text-align: center
+  background: $color-pink
+  @extend .flexy
+  justify-content: center
+  align-items: center
+
+  *
+    flex: 1
+
 article
   padding: $article-padding
   border-radius: $global-corner-radius
@@ -87,51 +116,23 @@ article
     p
       color: $color-white
 
-//main container mods
-code
+hr
   display: block
-  border: 1px solid rgba($color-pink, .4)
-  border-radius: $global-corner-radius
-  padding: $gutter-half
-  margin: 0 0 $gutter-half
+  margin: $section-y-padding*3 0 0
+// CUSTOM CHOPS
 
-.header
-  height: 30vh
-  background: #00b09b
-  background: linear-gradient(to left, #cb2d3e, #ef473a)
-  text-align: center
-  font-size: 4rem
-  padding-top: 5rem
-  letter-spacing: .8rem
-
-.jumbotron
-  h1
-    color: white
-
-.navbar-brand
-  font-size: 1.6rem
-
-#sidebar
-  // position: fixed
-  // right: 0
-  // top: 0
-  // height: 100vh
-//CUSTOM
-
-
-.bg-black
-    background: $color-black
-
-.bg-blue
-    background: $color-blue
-
-footer
+#header
+  padding-top: 4rem
+  padding-bottom: 4rem
+  padding-left: 4rem
+  padding-right: 4rem
+  background: url("img/markus-spiske-headphone.jpg") center -40rem
+  background-size: cover
+  background-attachment: fixed
   height: 10rem
-  text-align: center
-  background: $color-pink
-  @extend .flexy
-  justify-content: center
-  align-items: center
 
-  *
-    flex: 1
+  @include breakpoint(sm)
+    height: 30rem
+
+  @include breakpoint(md)
+    height: 50rem

@@ -10,20 +10,32 @@
 </main>
 
 
-<div class="free bg-blue">
+<div id="header" class="loose">
+      <h5>Loose Headers are meant to be hand crafted.</h5>
+      <p>Responsive web design means to design websites that work well on mobile, tablet, and desktop devices, and according to Statista, mobile traffic is increasing significantly.</p>
+</div>
+
+<div class="loose bg-orange">
+      <div class="confined">
+            <h3 class="bg-black">If you want page-wide background for fixed width content.</h3>
+            <p class="bg-black">Responsive web design means to design websites that work well on mobile, tablet, and desktop devices, and according to Statista, mobile traffic is increasing significantly.</p>
+      </div>
+</div>
+
+<div class="confined">
       <h2>Must stack Medium and Below</h2>
       <p>Responsive web design means to design websites that work well on mobile, tablet, and desktop devices, and according to Statista, mobile traffic is increasing significantly.</p>
       <p> What does this mean? 🤔</p>
 
       <div class=" flexy stack-md">
-            <section>
+            <section data-flexratio="2" data-stackorder="1">
                   <article data-theme="light">
                         <h4>Light Theme</h4>
                         <p>Responsive web design means to design websites that work well on mobile, tablet, and desktop devices, and according to Statista, mobile traffic is increasing significantly.</p>
                         <p> What does this mean? 🤔</p>
                   </article>
             </section>
-            <section>
+            <section data-flexratio="3">
                   <article data-theme="dark">
                         <h4>Stack Test</h4>
                         <p>Responsive web design means to design websites that work well on mobile, tablet, and desktop devices, and according to Statista, mobile traffic is increasing significantly.</p>
@@ -36,7 +48,7 @@
                         <p> What does this mean? 🤔</p>
                   </article>
             </section>
-            <section>
+            <section data-flexratio="3">
                   <article data-theme="dark">
                         <h4>Dark Theme</h4>
                         <p>Responsive web design means to design websites that work well on mobile, tablet, and desktop devices, and according to Statista, mobile traffic is increasing significantly.</p>
@@ -45,6 +57,8 @@
             </section>
       </div>
       <p>Responsive web design means to design websites that work well on mobile, tablet, and desktop devices, and according to Statista, mobile traffic is increasing significantly.</p>
+      
+      <hr>
 </div>
 
 <div class="confined">
@@ -80,6 +94,8 @@
             </section>
       </div>
       <p>This table represents a thousand lives that lived before the great flu.</p>
+      
+      <hr>
 </div>
 
 
@@ -95,7 +111,7 @@
             <p>It means, websites that aren’t <a href="">optimized</a> for mobile devices are likely alienating a frightening share of their users, since 80% of users say that they’ll disengage with websites that don’t work well on their device. Additionally, search engines actively demote websites that aren’t mobile-friendly in their search results, affecting SEO</p>
       </section>
 </div>
-<div class="free flexy stack-sm">
+<div class="confined flexy stack-sm">
       <section>
             <h4>Flex ratio: 1</h4>
             <code>section data-flexratio="1"</code>
@@ -121,7 +137,7 @@
 
 
 
-<div class="free">
+<div class="confined">
       <h2>You can do whatever you like</h2>
       <p>Responsive web design means to design websites that work well on mobile, tablet, and desktop devices, and according to Statista, mobile traffic is increasing significantly.</p>
       <p> What does this mean? 🤔</p>
